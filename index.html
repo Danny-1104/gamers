@@ -1,190 +1,223 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zona Gamer - Apoyo a Streamers</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zona Gamer - Apoyo a Streamers</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
 </head>
-<body>
+<body class = "bg-image" style="background-image: url('imagenes/fondo.png'); height: 100vh;">
 
-<button id="topBtn" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand text-white fw-bold" href="#">Zona Gamer</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#intro">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#destacados">Destacados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#consejos">Consejos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#grafico">Gráfico</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#comunidad">Comunidad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#colab">Colaboración</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#formulario">Formulario</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-<nav class="nav-cyber">
-    <a href="#intro">Inicio</a>
-    <a href="#beneficios">Beneficios</a>
-    <a href="#destacados">Destacados</a>
-    <a href="#consejos">Consejos</a>
-    <a href="#video">Video</a>
-    <a href="#grafico">Gráfico</a>
-    <a href="#comunidad">Comunidad</a>
-    <a href="#colab">Colaboración</a>
-    <a href="#formulario">Formulario</a>
-</nav>
+        <main class="container pt-5">
+            <div class="py-5 text-center bg-dark bg-opacity-50 rounded mt-5">
+                <h1 class="display-5 text-info">Comunidad Gamer & Streamers Emergentes</h1>
+                <p class="text-light">Apoyo, colaboración y crecimiento para creadores en YouTube, Twitch, Kick y Facebook Gaming.</p>
+            </div>
 
-<header>
-    Comunidad Gamer & Streamers Emergentes
-</header>
+            <section id="intro" class="my-4">
+                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 border border-info">
+                    <h2 class="h4 text-info">Bienvenido a la Zona Gamer</h2>
+                    <p class="text-light">Esta comunidad fue creada con el objetivo de apoyar a streamers y creadores de contenido que están comenzando. Aquí encontrarás recursos, compañeros para colaborar y consejos prácticos para crecer tu canal.</p>
+                </div>
+            </section>
 
-<section id="intro">
-    <h2>Bienvenido a la Zona Gamer</h2>
-    <p>
-        Esta comunidad fue creada con el objetivo de apoyar a streamers y creadores de contenido que están comenzando en plataformas como YouTube, Facebook Gaming, Kick y Twitch. Aquí podrás encontrar compañeros con los cuales compartir experiencias, consejos y colaboraciones que te ayudarán a crecer y mejorar tu presencia online. También ofrecemos orientación sobre branding personal, interacción con la audiencia, herramientas de transmisión y optimización de canales.
-    </p>
-</section>
+            <section id="beneficios" class="my-4">
+                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 border border-info">
+                    <h2 class="h4 text-info">¿Qué Ganarás al Unirte?</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Apoyo real entre streamers.</li>
+                                <li>Promoción en redes.</li>
+                                <li>Mejoras de contenido y branding.</li>
+                                <li>Participación en colaboraciones y eventos.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 text-center align-self-center">
+                            <img src="imagenes/Logo.png" alt="Logo" class="img-fluid rounded shadow-sm" style="max-width:180px">
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-<section id="beneficios">
-    <h2>¿Qué Ganarás al Unirte?</h2>
-    <ul class="beneficios">
-        <li>Apoyo real entre streamers, creando una comunidad de crecimiento mutuo.</li>
-        <li>Promoción en redes sociales y grupos especializados en gaming.</li>
-        <li>Mejoras en la calidad visual y auditiva de tus transmisiones.</li>
-        <li>Participación en eventos, torneos, entrevistas y colaboraciones grupales.</li>
-    </ul>
-</section>
+            <section id="destacados" class="my-4">
+                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 border border-info">
+                    <h2 class="h4 text-info">Streamers & Juegos Recomendados</h2>
+                    <div class="row g-3">
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card text-center p-2 bg-dark text-white border border-info shadow-sm">
+                                <img src="imagenes/ibai.png" class="img-fluid rounded shadow-sm mb-2" alt="Ibai">
+                                <div class="card-body p-1">
+                                    <strong>@Ibai</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card text-center p-2 bg-dark text-white border border-info shadow-sm">
+                                <img src="imagenes/auron.png" class="img-fluid rounded shadow-sm mb-2" alt="Auronplay">
+                                <div class="card-body p-1"><strong>@Auronplay</strong></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card text-center p-2 bg-dark text-white border border-info shadow-sm">
+                                <img src="imagenes/thegref.png" class="img-fluid rounded shadow-sm mb-2" alt="TheGrefg">
+                                <div class="card-body p-1"><strong>@TheGrefg</strong></div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card text-center p-2 bg-dark text-white border border-info shadow-sm">
+                                <img src="imagenes/Logo.png" class="img-fluid rounded shadow-sm mb-2" alt="Comunidad">
+                                <div class="card-body p-1"><strong>Zona Gamer</strong></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-<section id="destacados">
-    <h2>Streamers & Juegos Recomendados</h2>
+            <section id="consejos" class="my-4">
+                <div class="section-panel">
+                    <h2>Consejos para Mejorar tus Streams</h2>
+                    <ul>
+                        <li>Habla aunque no haya espectadores.</li>
+                        <li>Mantén horarios fijos para fidelizar audiencia.</li>
+                        <li>Crea miniaturas llamativas y títulos claros.</li>
+                        <li>Colabora y comparte audiencias con otros creadores.</li>
+                    </ul>
+                </div>
+            </section>
 
-    <ul class="beneficios">
-        <li>Valorant - Competitivo moderno con jugabilidad táctica.</li>
-        <li>Fortnite - Creatividad, construcción y gran comunidad activa.</li>
-        <li>Minecraft - Mundo abierto para construir, explorar y crear contenido.</li>
-        <li>GTA V Roleplay - Historias improvisadas y entretenimiento constante.</li>
-    </ul>
+            <section id="video" class="my-4">
+                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 text-center">
+                    <h2 class="h4 text-info">Video Motivacional</h2>
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/CfEOwQnd-OM" title="Video" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
 
-    <div class="destacados-grid">
-        <div class="card">
-            <a href="https://www.youtube.com/channel/UCaY_-ksFSQtTGk0y1HA_3YQ" target="_blank" class="logo-relieve">
-                <img src="imagenes/ibai.png" alt="Ibai">
-            </a>
-            <strong>@Ibai</strong>
-        </div>
-        <div class="card">
-            <a href="https://www.youtube.com/user/AuronPlay" target="_blank" class="logo-relieve">
-                <img src="imagenes/auron.png" alt="Auronplay">
-            </a>
-            <strong>@Auronplay</strong>
-        </div>
-        <div class="card">
-            <a href="https://www.youtube.com/channel/UCCEmjNPpJYhGDgaEqeeA4HA" target="_blank" class="logo-relieve">
-                <img src="imagenes/thegref.png" alt="TheGrefg">
-            </a>
-            <strong>@TheGrefg</strong>
-        </div>
-    </div>
-</section>
+            <section id="grafico" class="my-4">
+                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 text-center">
+                    <h2 class="h4 text-info">Gráfico de Crecimiento</h2>
+                    <img src="imagenes/crecimiento.png" class="img-fluid rounded shadow-sm" alt="Gráfico de crecimiento">
+                </div>
+            </section>
 
-<section id="consejos">
-    <h2>Consejos para Mejorar tus Streams</h2>
-    <ul class="beneficios">
-        <li>Habla aunque no haya espectadores, esto proyecta energía y mejora tu presencia.</li>
-        <li>Horarios fijos permiten que la audiencia se acostumbre y regrese.</li>
-        <li>Miniaturas llamativas y títulos claros atraen más clics.</li>
-        <li>Colabora con otros streamers para intercambiar audiencias.</li>
-    </ul>
-</section>
+            <section id="comunidad" class="my-4">
+                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 text-center">
+                    <h2 class="h4 text-info">Logo de la Comunidad</h2>
+                    <img src="imagenes/Logo.png" class="img-fluid rounded shadow-sm" alt="Logo Comunidad">
+                </div>
+            </section>
 
-<section id="video">
-    <h2>Video Motivacional</h2>
-    <div class="media-container">
-        <!-- iframe en formato embed para evitar rechazo por conexión -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/CfEOwQnd-OM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</section>
+            <section id="colab" class="my-4">
+                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 border border-info">
+                    <h2 class="h4 text-info">Requisitos de Colaboración</h2>
+                    <ul>
+                        <li>Respeto entre creadores.</li>
+                        <li>No usar bots o prácticas desleales.</li>
+                        <li>Apoyo real entre miembros.</li>
+                        <li>Actitud positiva y profesional.</li>
+                    </ul>
+                </div>
+            </section>
 
-<section id="grafico">
-    <h2>Gráfico de Crecimiento</h2>
-    <div class="media-container">
-        <!-- Se corrigió atributo class y se mantiene el ancho opcional -->
-        <img src="imagenes/crecimiento.png" class="logo-relieve" width="400" alt="Gráfico de crecimiento">
-    </div>
-</section>
+            <section id="formulario" class="my-4">
+                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 border border-info">
+                    <h2 class="h4 text-info">Formulario de Registro para la Comunidad</h2>
+                    <form action="procesar.php" method="POST" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label">Nombre del Creador</label>
+                                <input type="text" id="nombre" name="nombre" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="alias" class="form-label">Alias o Nickname</label>
+                                <input type="text" id="alias" name="alias" class="form-control" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="plataforma" class="form-label">Plataforma Principal</label>
+                                <select id="plataforma" name="plataforma" class="form-select">
+                                    <option>Youtube</option>
+                                    <option>Twitch</option>
+                                    <option>Facebook Gaming</option>
+                                    <option>Kick</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="canal" class="form-label">Link del Canal</label>
+                                <input type="url" id="canal" name="canal" class="form-control" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="pais" class="form-label">País</label>
+                                <input type="text" id="pais" name="pais" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="experiencia" class="form-label">Años de Experiencia</label>
+                                <input type="number" id="experiencia" name="experiencia" class="form-control" min="0">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="horario" class="form-label">Horario de Transmisión</label>
+                                <input type="text" id="horario" name="horario" class="form-control" placeholder="Ej: 7PM - 10PM">
+                            </div>
+                            <div class="col-12">
+                                <label for="juego" class="form-label">Juego Principal</label>
+                                <input type="text" id="juego" name="juego" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <label for="objetivo" class="form-label">¿Qué buscas en la comunidad?</label>
+                                <textarea id="objetivo" name="objetivo" rows="4" class="form-control"></textarea>
+                            </div>
+                            <div class="col-md-8">
+                                <label for="correo" class="form-label">Correo de Contacto</label>
+                                <input type="email" id="correo" name="correo" class="form-control" required>
+                            </div>
+                            <div class="col-md-4 d-flex align-items-end">
+                                <button type="submit" class="btn btn-info fw-bold text-dark w-100">Enviar Registro</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
 
-<section id="comunidad">
-    <h2>Logo de la Comunidad</h2>
-    <div class="media-container">
-        <img src="imagenes/Logo.png" class="logo-relieve" alt="Logo Comunidad">
-    </div>
-</section>
+        </main>
 
-<section id="colab">
-    <h2>Requisitos de Colaboración</h2>
-    <ul class="colab-lista">
-        <li>Respeto entre creadores y sus comunidades.</li>
-        <li>No usar bots, seguidores falsos ni trampas.</li>
-        <li>Apoyo real en likes, comentarios y compartidos.</li>
-        <li>Buena actitud y ambiente sano en cada stream.</li>
-    </ul>
-</section>
+        <footer class="bg-dark text-center text-info py-3 mt-3">
+            © 2025 Zona Gamer - Unidos Crecemos
+        </footer>
 
-<section id="formulario">
-    <h2>Formulario de Registro para la Comunidad</h2>
-    <form action="procesar.php" method="POST" novalidate>
+        <button id="topBtn" class="btn btn-info rounded-circle position-fixed bottom-0 end-0 m-3 d-none" title="Ir arriba">↑</button>
 
-        <!-- Nombre del Creador -->
-        <label for="nombre">Nombre del Creador:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <!-- Alias o Nickname -->
-        <label for="alias">Alias o Nickname:</label>
-        <input type="text" id="alias" name="alias" required>
-
-        <!-- Plataforma Principal -->
-        <label for="plataforma">Plataforma Principal:</label>
-        <select id="plataforma" name="plataforma">
-            <option>Youtube</option>
-            <option>Twitch</option>
-            <option>Facebook Gaming</option>
-            <option>Kick</option>
-        </select>
-
-        <!-- Link del Canal -->
-        <label for="canal">Link del Canal:</label>
-        <input type="url" id="canal" name="canal" required>
-
-        <!-- País -->
-        <label for="pais">País:</label>
-        <input type="text" id="pais" name="pais">
-
-        <!-- Años de experiencia -->
-        <label for="experiencia">Años de Experiencia en Streaming:</label>
-        <input type="number" id="experiencia" name="experiencia" min="0">
-
-        <!-- Horario de Transmisión -->
-        <label for="horario">Horario de Transmisión:</label>
-        <input type="text" id="horario" name="horario" placeholder="Ej: 7PM - 10PM">
-
-        <!-- Juego Principal -->
-        <label for="juego">Juego Principal:</label>
-        <input type="text" id="juego" name="juego">
-
-        <!-- Objetivo en la Comunidad -->
-        <label for="objetivo">¿Qué buscas en la comunidad?</label>
-        <textarea id="objetivo" name="objetivo" rows="4"></textarea>
-
-        <!-- Correo -->
-        <label for="correo">Correo de Contacto:</label>
-        <input type="email" id="correo" name="correo" required>
-
-        <br>
-
-        <button type="submit">Enviar Registro</button>
-    </form>
-</section>
-
-<footer>
-    © 2025 Zona Gamer - Unidos Crecemos
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-/* Mostrar botón al bajar */
-window.addEventListener("scroll", () => {
-    document.getElementById("topBtn").style.display =
-        (window.scrollY > 400) ? "block" : "none";
-});
-
-</script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="" crossorigin="anonymous"></script>
+        <script>
+            const topBtn = document.getElementById('topBtn');
+            window.addEventListener('scroll', () => {
+                topBtn.classList.toggle('d-none', window.scrollY <= 400);
+            });
+            topBtn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+        </script>
 
 </body>
 </html>
