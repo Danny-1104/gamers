@@ -48,7 +48,7 @@
                 <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 border border-info">
                     <h2 class="h4 text-info">¿Qué Ganarás al Unirte?</h2>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 text-white">
                             <ul>
                                 <li>Apoyo real entre streamers.</li>
                                 <li>Promoción en redes.</li>
@@ -66,10 +66,12 @@
             <section id="destacados" class="my-4">
                 <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 border border-info">
                     <h2 class="h4 text-info">Streamers & Juegos Recomendados</h2>
-                    <div class="row g-3">
+                    <div class="row g-3 justify-content-center">
                         <div class="col-sm-6 col-md-3">
                             <div class="card text-center p-2 bg-dark text-white border border-info shadow-sm">
-                                <img src="imagenes/ibai.png" class="img-fluid rounded shadow-sm mb-2" alt="Ibai">
+                                <a href="https://www.youtube.com/channel/UCaY_-ksFSQtTGk0y1HA_3YQ">
+                                    <img src="imagenes/ibai.png" class="card-img rounded shadow-sm mb-2" alt="Ibai">
+                                </a>
                                 <div class="card-body p-1">
                                     <strong>@Ibai</strong>
                                 </div>
@@ -77,20 +79,18 @@
                         </div>
                         <div class="col-sm-6 col-md-3">
                             <div class="card text-center p-2 bg-dark text-white border border-info shadow-sm">
-                                <img src="imagenes/auron.png" class="img-fluid rounded shadow-sm mb-2" alt="Auronplay">
+                                <a href="https://www.youtube.com/@AuronPlay/featured">
+                                    <img src="imagenes/auron.png" class="card-img rounded shadow-sm mb-2" alt="Auronplay">
+                                </a>
                                 <div class="card-body p-1"><strong>@Auronplay</strong></div>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3">
                             <div class="card text-center p-2 bg-dark text-white border border-info shadow-sm">
-                                <img src="imagenes/thegref.png" class="img-fluid rounded shadow-sm mb-2" alt="TheGrefg">
+                                <a href="https://www.youtube.com/@AuronPlay/featured">
+                                    <img src="imagenes/thegref.png" class="card-img rounded shadow-sm mb-2" alt="TheGrefg">
+                                </a>
                                 <div class="card-body p-1"><strong>@TheGrefg</strong></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="card text-center p-2 bg-dark text-white border border-info shadow-sm">
-                                <img src="imagenes/Logo.png" class="img-fluid rounded shadow-sm mb-2" alt="Comunidad">
-                                <div class="card-body p-1"><strong>Zona Gamer</strong></div>
                             </div>
                         </div>
                     </div>
@@ -98,8 +98,8 @@
             </section>
 
             <section id="consejos" class="my-4">
-                <div class="section-panel">
-                    <h2>Consejos para Mejorar tus Streams</h2>
+                <h2 class="text-info">Consejos para Mejorar tus Streams</h2>
+                <div class="section-panel text-white">
                     <ul>
                         <li>Habla aunque no haya espectadores.</li>
                         <li>Mantén horarios fijos para fidelizar audiencia.</li>
@@ -121,7 +121,7 @@
             <section id="grafico" class="my-4">
                 <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 text-center">
                     <h2 class="h4 text-info">Gráfico de Crecimiento</h2>
-                    <img src="imagenes/crecimiento.png" class="img-fluid rounded shadow-sm" alt="Gráfico de crecimiento">
+                    <img src="imagenes/crecimiento.png" class="img-fluid w=50 rounded shadow-sm" alt="Gráfico de crecimiento">
                 </div>
             </section>
 
@@ -135,7 +135,7 @@
             <section id="colab" class="my-4">
                 <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 border border-info">
                     <h2 class="h4 text-info">Requisitos de Colaboración</h2>
-                    <ul>
+                    <ul class="text-white">
                         <li>Respeto entre creadores.</li>
                         <li>No usar bots o prácticas desleales.</li>
                         <li>Apoyo real entre miembros.</li>
@@ -149,15 +149,15 @@
                     <h2 class="h4 text-info">Formulario de Registro para la Comunidad</h2>
                     <form action="procesar.php" method="POST" novalidate>
                         <div class="row g-3">
-                            <div class="col-md-6">
+                            <div class="col-md-6 text-white">
                                 <label for="nombre" class="form-label">Nombre del Creador</label>
                                 <input type="text" id="nombre" name="nombre" class="form-control" required>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 text-white">
                                 <label for="alias" class="form-label">Alias o Nickname</label>
                                 <input type="text" id="alias" name="alias" class="form-control" required>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 text-white">
                                 <label for="plataforma" class="form-label">Plataforma Principal</label>
                                 <select id="plataforma" name="plataforma" class="form-select">
                                     <option>Youtube</option>
@@ -166,31 +166,31 @@
                                     <option>Kick</option>
                                 </select>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 text-white">
                                 <label for="canal" class="form-label">Link del Canal</label>
                                 <input type="url" id="canal" name="canal" class="form-control" required>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 text-white">
                                 <label for="pais" class="form-label">País</label>
                                 <input type="text" id="pais" name="pais" class="form-control">
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 text-white">
                                 <label for="experiencia" class="form-label">Años de Experiencia</label>
                                 <input type="number" id="experiencia" name="experiencia" class="form-control" min="0">
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 text-white">
                                 <label for="horario" class="form-label">Horario de Transmisión</label>
                                 <input type="text" id="horario" name="horario" class="form-control" placeholder="Ej: 7PM - 10PM">
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 text-white">
                                 <label for="juego" class="form-label">Juego Principal</label>
                                 <input type="text" id="juego" name="juego" class="form-control">
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 text-white">
                                 <label for="objetivo" class="form-label">¿Qué buscas en la comunidad?</label>
                                 <textarea id="objetivo" name="objetivo" rows="4" class="form-control"></textarea>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-8 text-white">
                                 <label for="correo" class="form-label">Correo de Contacto</label>
                                 <input type="email" id="correo" name="correo" class="form-control" required>
                             </div>
