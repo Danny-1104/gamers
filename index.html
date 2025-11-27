@@ -1,224 +1,257 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Zona Gamer - Apoyo a Streamers</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Gamer - Apoyo a Streamers</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .bg-fondo {
+            background-image: url('imagenes/fondo.png');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-<body class = "bg-image" style="background-image: url('imagenes/fondo.png'); height: 100vh;">
 
-        <!-- Navbar Página -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-                <a class="navbar-brand text-white fw-bold" href="#">Zona Gamer</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navMenu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#intro">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#destacados">Destacados</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#consejos">Consejos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#grafico">Gráfico</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#comunidad">Comunidad</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#colab">Colaboración</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#formulario">Formulario</a></li>
+<body class="bg-fondo min-h-screen text-white">
+
+    <nav class="fixed top-0 w-full bg-black bg-opacity-80 shadow-lg backdrop-blur-md z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center h-16">
+            <a class="text-xl font-bold text-cyan-400" href="#">Zona Gamer</a>
+
+            <button id="menuBtn" class="lg:hidden text-white text-3xl">☰</button>
+
+            <ul id="navMenu" class="hidden lg:flex gap-6 text-sm font-medium">
+                <li><a href="#intro" class="hover:text-cyan-400">Inicio</a></li>
+                <li><a href="#beneficios" class="hover:text-cyan-400">Beneficios</a></li>
+                <li><a href="#destacados" class="hover:text-cyan-400">Destacados</a></li>
+                <li><a href="#consejos" class="hover:text-cyan-400">Consejos</a></li>
+                <li><a href="#video" class="hover:text-cyan-400">Video</a></li>
+                <li><a href="#grafico" class="hover:text-cyan-400">Gráfico</a></li>
+                <li><a href="#comunidad" class="hover:text-cyan-400">Comunidad</a></li>
+                <li><a href="#colab" class="hover:text-cyan-400">Colaboración</a></li>
+                <li><a href="#formulario" class="hover:text-cyan-400">Formulario</a></li>
+            </ul>
+        </div>
+
+        <ul id="mobileMenu" class="hidden flex-col bg-black bg-opacity-90 px-6 py-4 space-y-2 font-medium lg:hidden">
+            <li><a href="#intro">Inicio</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#destacados">Destacados</a></li>
+            <li><a href="#consejos">Consejos</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#grafico">Gráfico</a></li>
+            <li><a href="#comunidad">Comunidad</a></li>
+            <li><a href="#colab">Colaboración</a></li>
+            <li><a href="#formulario">Formulario</a></li>
+        </ul>
+    </nav>
+
+    <main class="container mx-auto px-4 pt-24">
+
+        <div class="py-10 text-center bg-black bg-opacity-60 rounded-lg mt-6 shadow-lg border border-cyan-400/40">
+            <h1 class="text-4xl font-extrabold text-cyan-400 drop-shadow-lg">Comunidad Gamer & Streamers Emergentes</h1>
+            <p class="text-gray-200 mt-2">Apoyo, colaboración y crecimiento para creadores en YouTube, Twitch, Kick y Facebook Gaming.</p>
+        </div>
+
+        <section id="intro" class="my-6">
+            <div class="p-4 bg-black bg-opacity-60 rounded-lg border border-cyan-400 shadow-lg">
+                <h2 class="text-xl text-cyan-400 font-semibold">Bienvenido a la Zona Gamer</h2>
+                <p class="mt-2 text-gray-200">Esta comunidad fue creada con el objetivo de apoyar a streamers...</p>
+            </div>
+        </section>
+
+        <section id="beneficios" class="my-6">
+            <div class="p-4 bg-black bg-opacity-60 rounded-lg border border-cyan-400 shadow-lg">
+                <h2 class="text-xl text-cyan-400 font-semibold mb-4">¿Qué Ganarás al Unirte?</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                    <ul class="list-disc pl-6 text-gray-200">
+                        <li>Apoyo real entre streamers.</li>
+                        <li>Promoción en redes.</li>
+                        <li>Mejoras de contenido y branding.</li>
+                        <li>Participación en colaboraciones y eventos.</li>
                     </ul>
+
+                    <div class="text-center">
+                        <img src="imagenes/Logo.png" class="w-60 mx-auto rounded shadow-xl">Insignia</img>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </section>
 
-        <main class="container pt-5">
-            <div class="py-5 text-center bg-dark bg-opacity-50 rounded mt-5">
-                <h1 class="display-5 text-info">Comunidad Gamer & Streamers Emergentes</h1>
-                <p class="text-light">Apoyo, colaboración y crecimiento para creadores en YouTube, Twitch, Kick y Facebook Gaming.</p>
+        <section id="destacados" class="my-6">
+            <div class="p-4 bg-black bg-opacity-60 rounded-lg border border-cyan-400 shadow-lg">
+                <h2 class="text-xl text-cyan-400 font-semibold mb-3">Streamers & Juegos Recomendados</h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+
+                    <div class="bg-black bg-opacity-50 p-2 rounded border border-cyan-400 shadow text-center">
+                        <a href="https://www.youtube.com/channel/UCaY_-ksFSQtTGk0y1HA_3YQ" target="_blank">
+                            <img src="imagenes/ibai.png" class="rounded shadow mb-2">
+                        </a>
+                        <strong>@Ibai</strong>
+                    </div>
+
+                    <div class="bg-black bg-opacity-50 p-2 rounded border border-cyan-400 shadow text-center">
+                        <a href="https://www.youtube.com/@AuronPlay/featured" target="_blank">
+                            <img src="imagenes/auron.png" class="rounded shadow mb-2">
+                        </a>
+                        <strong>@Auronplay</strong>
+                    </div>
+
+                    <div class="bg-black bg-opacity-50 p-2 rounded border border-cyan-400 shadow text-center">
+                        <a href="https://www.youtube.com/@AuronPlay/featured" target="_blank">
+                            <img src="imagenes/thegref.png" class="rounded shadow mb-2">
+                        </a>
+                        <strong>@TheGrefg</strong>
+                    </div>
+
+                </div>
             </div>
+        </section>
 
-            <section id="intro" class="my-4">
-                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 border border-info">
-                    <h2 class="h4 text-info">Bienvenido a la Zona Gamer</h2>
-                    <p class="text-light">Esta comunidad fue creada con el objetivo de apoyar a streamers y creadores de contenido que están comenzando. Aquí encontrarás recursos, compañeros para colaborar y consejos prácticos para crecer tu canal.</p>
+        <section id="consejos" class="my-6">
+            <div class="p-4 bg-black bg-opacity-60 rounded-lg border border-cyan-400 shadow-lg">
+                <h2 class="text-xl text-cyan-400 font-semibold mb-2">Consejos para Mejorar tus Streams</h2>
+                <ul class="text-white-800 list-disc pl-6 bg-opacity-70 rounded p-4">
+                    <li>Habla aunque no haya espectadores.</li>
+                    <li>Mantén horarios fijos.</li>
+                    <li>Crea miniaturas llamativas.</li>
+                    <li>Colabora con otros creadores.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="video" class="my-6">
+            <div class="p-4 bg-black bg-opacity-60 rounded-lg text-center border border-cyan-300 shadow-lg">
+                <h2 class="text-xl text-cyan-400 font-semibold mb-3">Video Motivacional</h2>
+                <div class="aspect-video rounded-[50px] overflow-hidden shadow-lg">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/CfEOwQnd-OM" allowfullscreen></iframe>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="beneficios" class="my-4">
-                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 border border-info">
-                    <h2 class="h4 text-info">¿Qué Ganarás al Unirte?</h2>
-                    <div class="row">
-                        <div class="col-md-6 text-white">
-                            <ul>
-                                <li>Apoyo real entre streamers.</li>
-                                <li>Promoción en redes.</li>
-                                <li>Mejoras de contenido y branding.</li>
-                                <li>Participación en colaboraciones y eventos.</li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 text-center align-self-center">
-                            <img src="imagenes/Logo.png" alt="Logo" class="img-fluid rounded shadow-sm" style="max-width:180px">
-                        </div>
+        <section id="grafico" class="my-6">
+            <div class="p-4 bg-black bg-opacity-60 rounded-lg text-center border border-cyan-400 shadow-lg">
+                <h2 class="text-xl text-cyan-400 font-semibold mb-3">Gráfico de Crecimiento</h2>
+                <img src="imagenes/crecimiento.png" class="rounded shadow-xl mx-auto max-w-xs md:max-w-sm">
+            </div>
+        </section>
+
+        <section id="comunidad" class="my-6">
+            <div class="p-4 bg-black bg-opacity-60 rounded-lg text-center border border-cyan-400 shadow-lg">
+                <h2 class="text-xl text-cyan-400 font-semibold mb-3">Logo de la Comunidad</h2>
+                <img src="imagenes/Logo.png" class="rounded shadow-xl mx-auto max-w-xs">
+            </div>
+        </section>
+
+        <section id="colab" class="my-6">
+            <div class="p-4 bg-black bg-opacity-60 rounded-lg border border-cyan-400 shadow-lg">
+                <h2 class="text-xl text-cyan-400 font-semibold mb-3">Requisitos de Colaboración</h2>
+                <ul class="list-disc pl-6 text-gray-200">
+                    <li>Respeto entre creadores.</li>
+                    <li>No usar bots.</li>
+                    <li>Apoyo real entre miembros.</li>
+                    <li>Actitud positiva.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="formulario" class="my-6">
+            <div class="p-4 bg-black bg-opacity-60 rounded-lg border border-cyan-400 shadow-lg">
+                <h2 class="text-xl text-cyan-400 font-semibold mb-3">Formulario de Registro</h2>
+
+                <form action="procesar.php" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                    <div>
+                        <label class="text-white">Nombre del Creador</label>
+                        <input type="text" name="nombre" required class="w-full p-2 rounded bg-gray-900 text-white border border-cyan-400">
                     </div>
-                </div>
-            </section>
 
-            <section id="destacados" class="my-4">
-                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 border border-info">
-                    <h2 class="h4 text-info">Streamers & Juegos Recomendados</h2>
-                    <div class="row g-3 justify-content-center">
-                        <div class="col-sm-6 col-md-3">
-                            <div class="card text-center p-2 bg-dark text-white border border-info shadow-sm">
-                                <a href="https://www.youtube.com/channel/UCaY_-ksFSQtTGk0y1HA_3YQ">
-                                    <img src="imagenes/ibai.png" class="card-img rounded shadow-sm mb-2" alt="Ibai">
-                                </a>
-                                <div class="card-body p-1">
-                                    <strong>@Ibai</strong>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="card text-center p-2 bg-dark text-white border border-info shadow-sm">
-                                <a href="https://www.youtube.com/@AuronPlay/featured">
-                                    <img src="imagenes/auron.png" class="card-img rounded shadow-sm mb-2" alt="Auronplay">
-                                </a>
-                                <div class="card-body p-1"><strong>@Auronplay</strong></div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="card text-center p-2 bg-dark text-white border border-info shadow-sm">
-                                <a href="https://www.youtube.com/@AuronPlay/featured">
-                                    <img src="imagenes/thegref.png" class="card-img rounded shadow-sm mb-2" alt="TheGrefg">
-                                </a>
-                                <div class="card-body p-1"><strong>@TheGrefg</strong></div>
-                            </div>
-                        </div>
+                    <div>
+                        <label class="text-white">Alias o Nickname</label>
+                        <input type="text" name="alias" required class="w-full p-2 rounded bg-gray-900 text-white border border-cyan-400">
                     </div>
-                </div>
-            </section>
 
-            <section id="consejos" class="my-4">
-                <h2 class="text-info">Consejos para Mejorar tus Streams</h2>
-                <div class="section-panel text-white">
-                    <ul>
-                        <li>Habla aunque no haya espectadores.</li>
-                        <li>Mantén horarios fijos para fidelizar audiencia.</li>
-                        <li>Crea miniaturas llamativas y títulos claros.</li>
-                        <li>Colabora y comparte audiencias con otros creadores.</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section id="video" class="my-4">
-                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 text-center">
-                    <h2 class="h4 text-info">Video Motivacional</h2>
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/CfEOwQnd-OM" title="Video" allowfullscreen></iframe>
+                    <div>
+                        <label class="text-white">Plataforma Principal</label>
+                        <select name="plataforma" class="w-full p-2 rounded bg-gray-900 text-white border border-cyan-400">
+                            <option>Youtube</option>
+                            <option>Twitch</option>
+                            <option>Facebook Gaming</option>
+                            <option>Kick</option>
+                            <option>Tik Tok</option>
+                        </select>
                     </div>
-                </div>
-            </section>
 
-            <section id="grafico" class="my-4">
-                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 text-center">
-                    <h2 class="h4 text-info">Gráfico de Crecimiento</h2>
-                    <img src="imagenes/crecimiento.png" class="img-fluid w=50 rounded shadow-sm" alt="Gráfico de crecimiento">
-                </div>
-            </section>
+                    <div>
+                        <label class="text-white">Link del Canal</label>
+                        <input type="url" name="canal" required class="w-full p-2 rounded bg-gray-900 text-white border border-cyan-400">
+                    </div>
 
-            <section id="comunidad" class="my-4">
-                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 text-center">
-                    <h2 class="h4 text-info">Logo de la Comunidad</h2>
-                    <img src="imagenes/Logo.png" class="img-fluid rounded shadow-sm" alt="Logo Comunidad">
-                </div>
-            </section>
+                    <div>
+                        <label class="text-white">País</label>
+                        <input type="text" name="pais" class="w-full p-2 rounded bg-gray-900 text-white border border-cyan-400">
+                    </div>
 
-            <section id="colab" class="my-4">
-                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 border border-info">
-                    <h2 class="h4 text-info">Requisitos de Colaboración</h2>
-                    <ul class="text-white">
-                        <li>Respeto entre creadores.</li>
-                        <li>No usar bots o prácticas desleales.</li>
-                        <li>Apoyo real entre miembros.</li>
-                        <li>Actitud positiva y profesional.</li>
-                    </ul>
-                </div>
-            </section>
+                    <div>
+                        <label class="text-white">Años de Experiencia</label>
+                        <input type="number" name="experiencia" min="0" class="w-full p-2 rounded bg-gray-900 text-white border border-cyan-400">
+                    </div>
 
-            <section id="formulario" class="my-4">
-                <div class="p-3 bg-dark bg-opacity-50 rounded mb-3 border border-info">
-                    <h2 class="h4 text-info">Formulario de Registro para la Comunidad</h2>
-                    <form action="procesar.php" method="POST" novalidate>
-                        <div class="row g-3">
-                            <div class="col-md-6 text-white">
-                                <label for="nombre" class="form-label">Nombre del Creador</label>
-                                <input type="text" id="nombre" name="nombre" class="form-control" required>
-                            </div>
-                            <div class="col-md-6 text-white">
-                                <label for="alias" class="form-label">Alias o Nickname</label>
-                                <input type="text" id="alias" name="alias" class="form-control" required>
-                            </div>
-                            <div class="col-md-6 text-white">
-                                <label for="plataforma" class="form-label">Plataforma Principal</label>
-                                <select id="plataforma" name="plataforma" class="form-select">
-                                    <option>Youtube</option>
-                                    <option>Twitch</option>
-                                    <option>Facebook Gaming</option>
-                                    <option>Kick</option>
-                                    <option>Tik Tok</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6 text-white">
-                                <label for="canal" class="form-label">Link del Canal</label>
-                                <input type="url" id="canal" name="canal" class="form-control" required>
-                            </div>
-                            <div class="col-md-4 text-white">
-                                <label for="pais" class="form-label">País</label>
-                                <input type="text" id="pais" name="pais" class="form-control">
-                            </div>
-                            <div class="col-md-4 text-white">
-                                <label for="experiencia" class="form-label">Años de Experiencia</label>
-                                <input type="number" id="experiencia" name="experiencia" class="form-control" min="0">
-                            </div>
-                            <div class="col-md-4 text-white">
-                                <label for="horario" class="form-label">Horario de Transmisión</label>
-                                <input type="text" id="horario" name="horario" class="form-control" placeholder="Ej: 7PM - 10PM">
-                            </div>
-                            <div class="col-12 text-white">
-                                <label for="juego" class="form-label">Juego Principal</label>
-                                <input type="text" id="juego" name="juego" class="form-control">
-                            </div>
-                            <div class="col-12 text-white">
-                                <label for="objetivo" class="form-label">¿Qué buscas en la comunidad?</label>
-                                <textarea id="objetivo" name="objetivo" rows="4" class="form-control"></textarea>
-                            </div>
-                            <div class="col-md-8 text-white">
-                                <label for="correo" class="form-label">Correo de Contacto</label>
-                                <input type="email" id="correo" name="correo" class="form-control" required>
-                            </div>
-                            <div class="col-md-4 d-flex align-items-end">
-                                <button type="submit" class="btn btn-info fw-bold text-dark w-100">Enviar Registro</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
+                    <div>
+                        <label class="text-white">Horario de Transmisión</label>
+                        <input type="text" name="horario" class="w-full p-2 rounded bg-gray-900 text-white border border-cyan-400">
+                    </div>
 
-        </main>
+                    <div class="md:col-span-2">
+                        <label class="text-white">Juego Principal</label>
+                        <input type="text" name="juego" class="w-full p-2 rounded bg-gray-900 text-white border border-cyan-400">
+                    </div>
 
-        <footer class="bg-dark text-center text-info py-3 mt-3">
-            © 2025 Zona Gamer - Unidos Crecemos
-        </footer>
+                    <div class="md:col-span-2">
+                        <label class="text-white">¿Qué buscas en la comunidad?</label>
+                        <textarea name="objetivo" rows="3" class="w-full p-2 rounded bg-gray-900 text-white border border-cyan-400"></textarea>
+                    </div>
 
-        <button id="topBtn" class="btn btn-info rounded-circle position-fixed bottom-0 end-0 m-3 d-none" title="Ir arriba">↑</button>
+                    <div>
+                        <label class="text-white">Correo de Contacto</label>
+                        <input type="email" name="correo" required class="w-full p-2 rounded bg-gray-900 text-white border border-cyan-400">
+                    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="" crossorigin="anonymous"></script>
-        <script>
-            const topBtn = document.getElementById('topBtn');
-            window.addEventListener('scroll', () => {
-                topBtn.classList.toggle('d-none', window.scrollY <= 400);
-            });
-            topBtn.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
-        </script>
+                    <div class="flex items-end">
+                        <button class="w-full bg-cyan-400 text-black font-bold py-2 rounded hover:bg-cyan-300 transition">Enviar Registro</button>
+                    </div>
+                </form>
+            </div>
+        </section>
 
+    </main>
+
+    <footer class="bg-black text-cyan-400 text-center py-3 mt-6">
+        © 2025 Zona Gamer - Unidos Crecemos
+    </footer>
+
+    <button id="topBtn" class="hidden fixed bottom-5 right-5 bg-cyan-400 text-black font-bold w-12 h-12 rounded-full shadow-xl">↑</button>
+
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        const topBtn = document.getElementById("topBtn");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 400) topBtn.classList.remove("hidden");
+            else topBtn.classList.add("hidden");
+        });
+        topBtn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+    </script>
 </body>
 </html>
